@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 
-namespace Week2Day1
+namespace WeekDay1
 {
     internal class Week2Quiz
                     {

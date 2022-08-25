@@ -5,4 +5,4 @@
 //Week2Day1.MathCase.isPrime(15);
 //Week2Day1.StringCase.StringsCase();
 //Week2Day1.Week2Quiz.Soalnomor2();
-Week2Day1.Week2Quiz.Soalnomor11();
+WeekDay1.Week2Quiz.Soalnomor11();

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL E5470\\source\\repos\\Week2Day1\\Week2Day1.csproj",
-      "projectName": "Week2Day1",
-      "projectPath": "C:\\Users\\DELL E5470\\source\\repos\\Week2Day1\\Week2Day1.csproj",
+      "projectUniqueName": "C:\\Users\\DELL E5470\\source\\repos\\Week2Day1\\WeekDay1.csproj",
+      "projectName": "WeekDay1",
+      "projectPath": "C:\\Users\\DELL E5470\\source\\repos\\Week2Day1\\WeekDay1.csproj",
       "packagesPath": "C:\\Users\\DELL E5470\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\DELL E5470\\source\\repos\\Week2Day1\\obj\\",
       "projectStyle": "PackageReference",

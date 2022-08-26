@@ -1,0 +1,15 @@
+C:\Users\DELL E5470\source\repos\WeekDay2\bin\Debug\net6.0\WeekDay2.exe
+C:\Users\DELL E5470\source\repos\WeekDay2\bin\Debug\net6.0\WeekDay2.deps.json
+C:\Users\DELL E5470\source\repos\WeekDay2\bin\Debug\net6.0\WeekDay2.runtimeconfig.json
+C:\Users\DELL E5470\source\repos\WeekDay2\bin\Debug\net6.0\WeekDay2.dll
+C:\Users\DELL E5470\source\repos\WeekDay2\bin\Debug\net6.0\WeekDay2.pdb
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.csproj.AssemblyReference.cache
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.AssemblyInfoInputs.cache
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.AssemblyInfo.cs
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.csproj.CoreCompileInputs.cache
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.dll
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\refint\WeekDay2.dll
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.pdb
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\WeekDay2.genruntimeconfig.cache
+C:\Users\DELL E5470\source\repos\WeekDay2\obj\Debug\net6.0\ref\WeekDay2.dll

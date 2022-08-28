@@ -62,4 +62,26 @@ var matrix=Matrix.Soal10(5,5);
 Matrix.DisplayMatrix(matrix);
 **/
 
+MyCollection.InitList();
+MyCollection.InitStack();
+MyCollection.InitDictionary();
+MyCollection.InitHashset();
+MyCollection.InitQueue();
+
+
+//declare
+
+var list = new List<string> { "Dios", "Widi", "Irham" };
+var student =MyCollection.GetStudent(ref list);
+
+foreach(var item in student)
+{
+    Console.WriteLine($"{item}");
+}
+var number = new List<int> { 2, 3, 4, 5, 6 };
+var myNumber =MyCollection.GetStudent(ref number);
+foreach(var item in number)
+{
+    Console.WriteLine($"{item}");
+}
 ReadLine();

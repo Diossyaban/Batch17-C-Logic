@@ -47,7 +47,7 @@ ArrayTest.DisplayArrayInt(shifting);
 
 /** Matrix */
 
-
+/**
 Matrix.InitMatrix();
 var myMatrix = Matrix.FillRandomMatrix(5, 5);
 Matrix.DisplayMatrix(myMatrix);
@@ -55,5 +55,11 @@ Matrix.DisplayMatrix(myMatrix);
 WriteLine();
 var matrixDiagonal = Matrix.MatrixDiagonal(5, 5);
 Matrix.DisplayMatrix(matrixDiagonal);
+**/
+
+/**
+var matrix=Matrix.Soal10(5,5);
+Matrix.DisplayMatrix(matrix);
+**/
 
 ReadLine();

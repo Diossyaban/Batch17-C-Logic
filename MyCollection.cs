@@ -107,14 +107,14 @@ namespace WeekDay2
         {
             var queue = new Queue<string>();
             queue.Enqueue("Dios");
-            queue.Enqueue("Widi");
-            queue.Enqueue("Irham");
+            queue.Enqueue("Nada");
+            queue.Enqueue("Syarifa");
 
             Console.WriteLine($"Queue from front back");
             foreach (var item in queue)
             {
 
-                Console.Write($"P{item}");
+                Console.Write($"{item}");
             }
 
             string served = queue.Dequeue();
@@ -142,6 +142,126 @@ namespace WeekDay2
 
 
         }
+
+        public static void SoalFindLongestSequence()
+        {
+            HashSet<int> number = new HashSet<int>() { 7, 2, 7, 1, 2,5,1 };
+            
+         
+
+            var hs1 = new HashSet<int>() { 7, 2, 7, 1, 2, 3, 8, 1, 2, 3, 4, 5 };
+            var hs2 = new HashSet<int>() { 1, 1, 2, 2, 2, 3, 3, 3, 3 } ;
+            var result1 = new HashSet<int>(hs1);
+
+            result1.IntersectWith(hs2); //iner join 1,2
+
+            var result2 = new HashSet<int>(hs1);
+            result2.UnionWith(hs2); //union 1,2,3,4,5,6,9
+
+            var result3 = new HashSet<int>(hs1);
+            result3.ExceptWith(hs2); //5,6,9
+
+            var result4 = new HashSet<int>(hs1);
+            result4.SymmetricExceptWith(hs2); //3,4,5,6,9
+
+
+            Console.WriteLine();
+        }
+
+        static int[,] dp = new int[1000, 1000];
+
+      
+        public static int findLongestRepeatingSubSeq(char[] X, int m, int n)
+        {
+
+            if (dp[m, n] != -1)
+            {
+                return dp[m, n];
+            }
+
+          
+            if (m == 0 || n == 0)
+            {
+                return dp[m, n] = 0;
+            }
+
+      
+            if (X[m - 1] == X[n - 1] && m != n)
+            {
+                return dp[m, n] = findLongestRepeatingSubSeq(X,
+                        m - 1, n - 1) + 1;
+            }
+
+        
+            return dp[m, n] = Math.Max(findLongestRepeatingSubSeq(X, m, n - 1),
+                    findLongestRepeatingSubSeq(X, m - 1, n));
+        }
+
+    
+        static public void Main()
+        {
+            Console.WriteLine("1234443324");
+            String str = "1234443324";
+            int m = str.Length;
+            for (int i = 0; i < dp.GetLength(0); i++)
+                for (int j = 0; j < dp.GetLength(1); j++)
+                    dp[i, j] = -1;
+            Console.WriteLine("The length of the largest subsequence that"
+                    + " repeats itself is : "
+                    + findLongestRepeatingSubSeq(str.ToCharArray(), m, m));
+
+        }
+
+        static void Main(string[] args)
+        {
+            String str1;
+            str1 = "aaaaaabbbbccc";
+            Console.WriteLine("Original String: " + str1);
+            Console.WriteLine("After removing duplicates characters from the said string:");
+            Console.WriteLine(remove_duplicate_chars(str1));
+            str1 = "Python";
+            Console.WriteLine("Original String: " + str1);
+            Console.WriteLine("After removing duplicates characters from the said string:");
+            Console.WriteLine(remove_duplicate_chars(str1));
+            str1 = "Java";
+            Console.WriteLine("Original String: " + str1);
+            Console.WriteLine("After removing duplicates characters from the said string:");
+            Console.WriteLine(remove_duplicate_chars(str1));
+        }
+
+        public static string remove_duplicate_chars(string str1)
+        {
+            var indexes = new Dictionary<char, int>();
+            for (int i = 0; i < str1.Length; i++)
+                indexes[str1[i]] = i;
+
+            var flag = new HashSet<char>();
+            var stack = new Stack<char>();
+            for (int i = 0; i < str1.Length; i++)
+            {
+                var ele = str1[i];
+                if (!flag.Contains(ele))
+                {
+                    while (stack.Count > 0 && stack.Peek() > ele && i < indexes[stack.Peek()])
+                        flag.Remove(stack.Pop());
+
+                    flag.Add(ele);
+                    stack.Push(ele);
+                }
+            }
+
+            var s = new char[stack.Count];
+            int index = stack.Count - 1;
+            foreach (var ele in stack)
+                s[index--] = ele;
+            return new string(s);
+        }
     }
 }
+    
+
+
+
+
+
 

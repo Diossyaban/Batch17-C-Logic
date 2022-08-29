@@ -1,25 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WeekDay2
 {
     internal class Quiz4
     {
-         static void Main(string[] args)
+        static void Main(string[] args)
         {
             String str1;
-            str1 = "DDDIIIOOOSSS";
+            str1 = "11234123";
             Console.WriteLine("Original String: " + str1);
             Console.WriteLine("Setelah Duplikat:");
             Console.WriteLine(remove_duplicate_chars(str1));
-            str1 = "SSSSYYYAAAAA";
+            str1 = "7531";
             Console.WriteLine("Original String: " + str1);
             Console.WriteLine("Setelah Duplikat:");
             Console.WriteLine(remove_duplicate_chars(str1));
-            str1 = "BBAAN";
+            str1 = "111111";
             Console.WriteLine("Original String: " + str1);
             Console.WriteLine("Setelah Duplikat:");
             Console.WriteLine(remove_duplicate_chars(str1));
@@ -52,7 +48,10 @@ namespace WeekDay2
                 s[index--] = ele;
             return new string(s);
         }
+
+
+
+
     }
 }
-    
 

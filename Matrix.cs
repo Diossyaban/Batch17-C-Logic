@@ -12,7 +12,6 @@ namespace WeekDay2
             matrix[2, 2] = 125;
             // Console.WriteLine(matrix);
         }
-
         public static int[,] FillRandomMatrix(int baris, int kolom)
         {
             int[,] matrix = new int[baris, kolom];
@@ -28,8 +27,6 @@ namespace WeekDay2
 
             return matrix;
         }
-
-
         public static int[,] MatrixDiagonal(int baris, int kolom)
         {
             int[,] matrix = new int[baris, kolom];
@@ -67,6 +64,48 @@ namespace WeekDay2
                 }
                 Console.WriteLine();
             }
+
+        }
+        public static void DisplayArrayInteger(int[] list)
+        {
+            for (int i = 0; i < list.Length; i++)
+            {
+                Console.Write(list[i] + " ");
+            }
+        }
+
+        public static void Soal1()
+        {
+            int[] array = { 15, 2, 30, 12, 10, 5 };
+           
+            Random rand = new Random();
+            Console.WriteLine("Sebelum random ");
+            DisplayArrayInteger(array);
+            Console.WriteLine("\n");
+            for (int i = 0; i < array.Length; i++)
+            {
+                int randomIndex = rand.Next(0, array.Length); 
+              
+                int temp = array[randomIndex];
+                array[randomIndex] = array[i];
+              
+                array[i] = temp;
+             
+            }
+            Console.WriteLine("After random position ");
+            DisplayArrayInteger(array);
+        }
+        public static void Soal7()
+        {
+            int[] arr = { 1, 2, 3, 2, 7, 7, 1, 6, 3, 4, 5, 2, 3, 6, 8, 9 };
+            Console.WriteLine("Before remove ");
+            DisplayArrayInteger(arr);
+
+            int[] arr2 = arr.Distinct().ToArray();
+
+            Console.WriteLine("\nAfter remove duplicate ");
+            Array.Sort(arr2);
+            DisplayArrayInteger(arr2);
 
         }
 
@@ -127,43 +166,6 @@ namespace WeekDay2
             return array;
 
         }
-        public static int[,] SumMatriks(int baris, int kolom)
-        {
-            int[,] matrix = new int[baris, kolom];
-            int sum = 0;
-            int sum2 = 0;
-            int n = baris - 1;
-
-            for (int i = 0; i < matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < matrix.GetLength(1); j++)
-                {
-                    if (i != n && j != n)
-                    {
-                        matrix[i, j] = i + j;
-                        if (j <= n)
-                        {
-                            sum += matrix[i, j];
-                            matrix[n, i] = matrix[i, n] = sum;
-
-                            if (i == j)
-                            {
-                                sum2 += matrix[i, j];
-                                matrix[n, n] = sum2;
-                            }
-
-                            if (j == n - 1)
-                            {
-                                sum = 0;
-                            }
-                        }
-                    }
-                }
-            }
-
-            return matrix;
-        }
     }
 }
-
 

@@ -42,6 +42,9 @@ WriteLine();
 var shifting = ArrayTest.ShiftingTerus(n);
 ArrayTest.DisplayArrayInt(shifting);
 **/
+//WeekDay2.Matrix.Soal1();
+//WeekDay2.Matrix.Soal7();
+
 
 
 
@@ -57,15 +60,17 @@ var matrixDiagonal = Matrix.MatrixDiagonal(5, 5);
 Matrix.DisplayMatrix(matrixDiagonal);
 **/
 
-/**
-var matrix=Matrix.Soal10(5,5);
-Matrix.DisplayMatrix(matrix);
-**/
+
+//var matrix=Matrix.Soal10(5,5);
+//Matrix.DisplayMatrix(matrix);
+
 
 /**
 var matrix=Matrix.Soal11();
 Matrix.DisplayMatrix(matrix);
 **/
+
+
 
 
 
@@ -96,4 +101,9 @@ foreach(var item in number)
     Console.WriteLine($"{item}");
 }
 **/
+
+
+
+WeekDay2.QuizDay4.Soal5();
+
 ReadLine();

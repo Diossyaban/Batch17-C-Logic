@@ -77,7 +77,7 @@ namespace WeekDay2
                     int nilai = arr[i];
 
                     Console.Write(nilai);
-                    Console.WriteLine("");
+                    Console.Write("");
 
                 }
                 Console.WriteLine();
